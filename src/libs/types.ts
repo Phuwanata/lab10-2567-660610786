@@ -14,4 +14,9 @@ interface UserCardDetailProps {
     email: string;
     address: string;
 }
+<<<<<<< HEAD
 export type { UserCardDetailProps };
+=======
+export type { UserCardDetailProps };
+
+>>>>>>> 53d6d09764e2627a75a7816f89e4726a26cbcd89
