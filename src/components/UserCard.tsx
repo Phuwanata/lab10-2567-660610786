@@ -1,9 +1,9 @@
 "use client";
 
-import { UserCardProps } from "@/libs/types";
+import React, { useState } from "react";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
-import { useState } from "react";
 import UserCardDetail from "./UserCardDetail";
+import { UserCardProps } from "@/libs/types";
 
 export default function UserCard({ name, imgUrl, address, email }: UserCardProps) {
   const [isDetailShown, setIsDetailShown] = useState(false);
@@ -22,7 +22,7 @@ export default function UserCard({ name, imgUrl, address, email }: UserCardProps
         {isDetailShown ? <IconChevronUp /> : <IconChevronDown />}
       </div>
       {/* display UserCardDetail accordingly */}
-      {isDetailShown && <UserCardDetail address={address} email={email}/>}
+      {isDetailShown && <UserCardDetail email={email} address={address}/>}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 
-import { UserCardDetailProps } from "@/libs/types";
 import { IconMailForward, IconMapPins } from "@tabler/icons-react";
+import { UserCardDetailProps } from "@/libs/types";
 
 export default function UserCardDetail({ email, address }: UserCardDetailProps) {
   return (
